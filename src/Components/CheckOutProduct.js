@@ -4,7 +4,7 @@ import { useStateValue } from "../Datalayer";
 import { actionTypes } from "../reducer";
 function CheckOutProduct({ id, title, price, rating, image }) {
   const [, dispatch] = useStateValue();
-
+  console.log(id);
   const removefrombasket = () => {
     dispatch({
       type: actionTypes.REMOVE_FROM_BASKET,
